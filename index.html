@@ -4,255 +4,175 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>GOCMOD - Tải Game MOD APK & App Android Miễn Phí</title>
+<title>Tiên Nghịch Mobile MOD APK</title>
 
-<meta name="description" content="GOCMOD - Website chia sẻ game MOD APK, app mod Android miễn phí. Cập nhật game hot, ứng dụng mod mới nhất mỗi ngày.">
+<meta name="description" content="Download Tiên Nghịch Mobile MOD APK vô hạn tiền, full KNB, one hit.">
 
 <style>
+/* ===== RESET ===== */
 body{
   margin:0;
-  font-family:Arial;
-  background:#0f1117;
-  color:#eee;
+  font-family: system-ui, Arial;
+  background: #0b0f19;
+  color: #eaeaea;
+  line-height:1.7;
 }
 
-/* HEADER */
-.header{
-  background:#141826;
-  padding:15px 20px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  border-bottom:1px solid #222;
+/* ===== CONTAINER ===== */
+.container{
+  max-width: 900px;
+  margin: auto;
+  padding: 18px;
 }
 
-.logo{
+/* ===== CARD STYLE WRAPPER ===== */
+.post-wrapper{
+  background: linear-gradient(180deg,#141a2a,#0f1422);
+  border: 1px solid #20283a;
+  border-radius: 16px;
+  padding: 22px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+}
+
+/* ===== TITLE ===== */
+h1{
+  font-size: 28px;
+  color: #ffd36b;
+  margin-bottom: 10px;
+}
+
+/* ===== META ===== */
+.meta{
+  font-size: 13px;
+  color: #9aa4b2;
+  margin-bottom: 15px;
+}
+
+/* ===== IMAGE ===== */
+.hero img{
+  width:100%;
+  border-radius:14px;
+  margin: 12px 0 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+  transition: 0.3s;
+}
+
+.hero img:hover{
+  transform: scale(1.01);
+}
+
+/* ===== HEADINGS ===== */
+h2{
   font-size:20px;
-  font-weight:bold;
-  color:#ffd86b;
+  margin-top:25px;
+  padding-left:10px;
+  border-left:4px solid #ffd36b;
+  color:#fff;
 }
 
-.nav a{
-  color:#ddd;
-  margin-left:15px;
-  text-decoration:none;
-  font-size:14px;
-}
-
-.nav a:hover{
-  color:#ffd86b;
-}
-
-/* HERO */
-.hero{
-  text-align:center;
-  padding:40px 20px;
-  background:linear-gradient(135deg,#1b1f2e,#0f1117);
-}
-
-.hero h1{
-  font-size:28px;
-  color:#ffd86b;
-}
-
-.hero p{
-  color:#aaa;
-  max-width:700px;
-  margin:auto;
-}
-
-/* CATEGORIES */
-.section{
-  max-width:1100px;
-  margin:auto;
-  padding:20px;
-}
-
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:15px;
-}
-
-.card{
-  background:#1f2433;
+/* ===== TEXT BOX ===== */
+.box{
+  background:#121a2c;
   padding:15px;
   border-radius:12px;
-  transition:0.2s;
-  border:1px solid #2a2f44;
+  margin-top:10px;
+  border:1px solid #1f2a40;
 }
 
-.card:hover{
-  transform:translateY(-5px);
-  border-color:#ffd86b;
-}
-
-.card h3{
-  margin:0;
-  color:#ffd86b;
-}
-
-.card p{
-  font-size:13px;
-  color:#aaa;
-}
-
-/* POSTS */
-.post-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:15px;
-  margin-top:20px;
-}
-
-.post{
-  background:#1a1f2c;
-  border-radius:12px;
-  overflow:hidden;
-  border:1px solid #2a2f44;
-}
-
-.post img{
-  width:100%;
-  height:140px;
-  object-fit:cover;
-}
-
-.post-content{
-  padding:12px;
-}
-
-.post-title{
-  font-size:15px;
-  color:#ffd86b;
-  margin-bottom:8px;
-}
-
-.post-desc{
-  font-size:13px;
-  color:#aaa;
-}
-
-/* BUTTON */
+/* ===== BUTTON ===== */
 .btn{
   display:inline-block;
-  margin-top:10px;
-  padding:10px 14px;
-  background:linear-gradient(45deg,#ffb300,#ffdd55);
+  background: linear-gradient(45deg,#ffb300,#ffdd55);
   color:#000;
+  padding:14px 22px;
+  font-weight:700;
+  border-radius:10px;
   text-decoration:none;
-  border-radius:8px;
-  font-weight:bold;
-  font-size:13px;
+  margin-top:12px;
+  box-shadow: 0 6px 18px rgba(255,200,0,0.25);
+  transition:0.2s;
 }
 
-/* FOOTER */
-.footer{
-  text-align:center;
-  padding:20px;
-  font-size:12px;
-  color:#777;
-  border-top:1px solid #222;
-  margin-top:30px;
+.btn:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(255,200,0,0.35);
 }
 
+/* ===== LIST ===== */
+ul{
+  padding-left:18px;
+}
+
+li{
+  margin:6px 0;
+}
+
+/* ===== SMOOTH TEXT ===== */
+p{
+  color:#cfd6e4;
+}
+
+/* ===== MOBILE ===== */
 @media(max-width:600px){
-  .hero h1{font-size:22px;}
+  h1{font-size:22px;}
+  .post-wrapper{padding:14px;}
 }
 </style>
 </head>
 
 <body>
 
-<!-- HEADER -->
-<div class="header">
-  <div class="logo">GOCMOD</div>
-  <div class="nav">
-    <a href="#">Home</a>
-    <a href="#">Game MOD</a>
-    <a href="#">App MOD</a>
-    <a href="#">Contact</a>
-  </div>
-</div>
+<div class="container">
 
-<!-- HERO -->
-<div class="hero">
-  <h1>Tải Game MOD APK & Ứng Dụng Android Miễn Phí</h1>
-  <p>Cập nhật game MOD, app hack, APK Android mới nhất mỗi ngày. Tải nhanh, nhẹ, an toàn cho thiết bị của bạn.</p>
-</div>
+  <div class="post-wrapper">
 
-<!-- CATEGORY -->
-<div class="section">
-  <h2 style="color:#ffd86b;">📂 Danh mục</h2>
+    <!-- ===== GIỮ NGUYÊN CONTENT CỦA BẠN ===== -->
 
-  <div class="grid">
-    <div class="card">
-      <h3>🎮 Game MOD APK</h3>
-      <p>Game hack, mod tiền, one hit, menu mod.</p>
+    <h1>Tiên Nghịch Mobile MOD APK (Vô Hạn Tiền, One Hit)</h1>
+
+    <div class="meta">
+      🔥 Update 2026 | 🎮 RPG Tu Tiên | ⚡ MOD APK
     </div>
 
-    <div class="card">
-      <h3>📱 App MOD APK</h3>
-      <p>Ứng dụng mod premium mở khóa tính năng.</p>
-    </div>
-
-    <div class="card">
-      <h3>🔥 Game HOT</h3>
-      <p>Game trending được tải nhiều nhất.</p>
-    </div>
-
-    <div class="card">
-      <h3>⚙️ Tool Android</h3>
-      <p>Công cụ hỗ trợ, tối ưu, hack game.</p>
-    </div>
-  </div>
-
-</div>
-
-<!-- POSTS -->
-<div class="section">
-
-  <h2 style="color:#ffd86b;">🔥 Bài viết mới</h2>
-
-  <div class="post-grid">
-
-    <!-- POST 1 -->
-    <div class="post">
+    <!-- IMAGE GIỮ NGUYÊN LINK -->
+    <div class="hero">
       <img src="https://gocmod.me/wp-content/uploads/2026/06/unnamed-2026-06-29T214057.945.webp">
-      <div class="post-content">
-        <div class="post-title">Tiên Nghịch Mobile MOD APK</div>
-        <div class="post-desc">Vô hạn tiền, full KNB, one hit mới nhất 2026.</div>
-        <a class="btn" href="your-link.html">Xem ngay</a>
-      </div>
     </div>
 
-    <!-- POST 2 -->
-    <div class="post">
-      <img src="https://via.placeholder.com/600x300">
-      <div class="post-content">
-        <div class="post-title">Game RPG HOT 2026</div>
-        <div class="post-desc">Game nhập vai siêu hot đang trend.</div>
-        <a class="btn" href="#">Xem ngay</a>
-      </div>
+    <!-- DOWNLOAD BUTTON (GIỮ LINK CỦA BẠN) -->
+    <a class="btn" href="YOUR-LINK-HERE">
+      ⬇ TẢI NGAY MOD APK
+    </a>
+
+    <!-- ===== PHẦN CONTENT GIỮ NGUYÊN ===== -->
+
+    <h2>📌 Giới thiệu</h2>
+    <div class="box">
+      Tiên Nghịch Mobile là game nhập vai tu tiên hấp dẫn...
     </div>
 
-    <!-- POST 3 -->
-    <div class="post">
-      <img src="https://via.placeholder.com/600x300">
-      <div class="post-content">
-        <div class="post-title">App VIP MOD</div>
-        <div class="post-desc">Mở khóa premium miễn phí.</div>
-        <a class="btn" href="#">Xem ngay</a>
-      </div>
+    <h2>⚡ Tính năng MOD</h2>
+    <div class="box">
+      <ul>
+        <li>Vô hạn tiền</li>
+        <li>Full KNB</li>
+        <li>One Hit Kill</li>
+        <li>Menu MOD</li>
+      </ul>
     </div>
+
+    <h2>📊 Thông tin</h2>
+    <div class="box">
+      Phiên bản: 1.9<br>
+      Android: 5.0+<br>
+      Dung lượng: ~100MB
+    </div>
+
+    <h2>⬇ Download</h2>
+    <a class="btn" href="YOUR-LINK-HERE">TẢI NGAY</a>
 
   </div>
 
-</div>
-
-<!-- FOOTER -->
-<div class="footer">
-  © 2026 GOCMOD STYLE TEMPLATE | Android MOD APK Site
 </div>
 
 </body>
